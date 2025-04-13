@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: huggingface-upload-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: ./start.sh
+    envVars:
+      - key: HF_TOKEN
+        value: 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
+      - key: HF_REPO_ID
+        value: Aman6u5/rajatbhai
